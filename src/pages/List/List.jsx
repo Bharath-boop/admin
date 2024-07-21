@@ -8,7 +8,6 @@ const List = ({ url }) => {
 
   const fetchList = async () => {
     setLoad(false);
-    console.log(load);
     const res = await axios.get(`${url}/food/list`);
     // console.log(res.data);
     if (res.data.success) {
